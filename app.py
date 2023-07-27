@@ -1,6 +1,8 @@
 import pandas as pd
 
 def create_dataframe():
+    """A function to create a DataFrame"""
+
     df = pd.DataFrame({
         "Pays": ["Mali", "Senegal", "Guinea", "Togo"],
         "Président": ["Assimi Goita", "Macky Sall", "Mamady Doumbouya", "Faure Gnassingbé"]
