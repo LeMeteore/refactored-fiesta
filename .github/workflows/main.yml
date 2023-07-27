@@ -29,3 +29,8 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
 
+    # Install and setup a Python environment
+    - id: Tests
+      name: Run Python tests
+      run: python3 -m tests
+      shell: bash
