@@ -1,0 +1,16 @@
+name: Automatisation de tâches
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+  pull_request:
+  
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install
+      run: echo "Hello world"
+      shell: bash
