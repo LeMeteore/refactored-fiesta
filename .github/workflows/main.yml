@@ -32,5 +32,5 @@ jobs:
     # Install and setup a Python environment
     - id: Tests
       name: Run Python tests
-      run: python3 -m tests
+      run: python3 tests.py
       shell: bash
