@@ -11,6 +11,6 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-    - name: Install
-      run: echo "Hello world"
+    - name: Say Hello to the audience
+      run: echo "Hello world dear attendants"
       shell: bash
