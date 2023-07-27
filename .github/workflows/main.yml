@@ -14,3 +14,18 @@ jobs:
     - name: Say Hello to the audience
       run: echo "Hello world dear attendants"
       shell: bash
+      
+    # Clone the repository before being able to launch the tests
+    - id: Repository                                                                              
+      name: checkout the current repository                                                       
+      uses: actions/checkout@v2
+      
+    # Install and setup a Python environment
+    - id: Python                                                                                  
+      name: Python Setup & Packages Installation                                                  
+      uses: actions/setup-python@v2                                                               
+      with:                                                                                       
+        python-version: '3.9'                                                                     
+        cache: 'pip'                                                                              
+        run: pip install -r requirements.txt
+        
